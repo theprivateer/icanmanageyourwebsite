@@ -11,13 +11,13 @@ class ContactController extends Controller
     public function store(Request $request)
     {
         $fields = $request->only([
-            'name', 'company', 'email', 'what', 'budget', 'description', 'more',
+            'name', 'company', 'email', 'url', 'description', 'more',
         ]);
 
         Notification::route('mail', config('mail.to_email'))
             ->notify(new NewSubmission($fields));
 
-        if  ($request->ajax()) {
+        if ($request->ajax()) {
             return response('true');
         }
 
