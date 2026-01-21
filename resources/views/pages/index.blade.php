@@ -1,36 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-us">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<title>I can manage your website</title>
-		<meta name="description" content="I am a freelance web designer and developer who manages websites for small to medium sized businesses">
-
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/kelpui@1/css/kelp.css">
-        <script type="module" src="https://cdn.jsdelivr.net/npm/kelpui@1/js/kelp.js"></script>
-
-        <link rel="stylesheet" href="/css/fonts.css">
-        <style>
-            @layer kelp.theme {
-                :root {
-                    --font-size-base: 150%;
-                    --font-primary: "Satoshi", sans-serif;
-		            --font-secondary: "Satoshi", sans-serif;
-                }
-            }
-        </style>
-	</head>
-	<body>
-        <header class="container">
-            <nav class="navbar">
-                <a class="logo" href="/">I Can Manage Your Website</a>
-                <ul>
-                    <li><a class="btn primary" href="/contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-		<main>
+<x-site-layout>
             <section class="container">
                 <h1 class="size-6xl">Website management you don't have to think about</h1>
 
@@ -90,24 +58,11 @@
                 <p>If something needs attention, I will tell you. If nothing does, your site simply keeps working in the background.</p>
             </section>
 
-            <section class="container">
+            <section class="container callout primary margin-start-6xl">
                 <h2 class="size-5xl">Keep your website online and up to date</h2>
 
                 <p>If you want your website managed by someone experienced, reliable, and easy to work with, I can help. Whether you need full management or light ongoing support, we can find an arrangement that suits your business.</p>
-                <p>Get in touch and let’s talk about keeping your website running smoothly.</p>
-            </section>
 
-            <div class="text-center margin-start-4xl">
-                <a class="btn primary size-xl" href="/contact">Let's chat &rarr;</a>
+                <a class="btn primary size-xl" href="/contact">Let's talk about keeping your website running smoothly &rarr;</a>
             </div>
-        </main>
-
-        <footer class="container margin-start-4xl margin-end-4xl">
-            <div class="split">
-                <p>&copy; <a href="https://philstephens.com">Phil Stephens</a> {{ date('Y') }}</p>
-                <p><a href="https://www.linkedin.com/in/phil-stephens/">LinkedIn</a></p>
-                <p>Made with <a href="https://kelpui.com">Kelp</a></p>
-            </div>
-        </footer>
-	</body>
-</html>
+</x-site-layout>

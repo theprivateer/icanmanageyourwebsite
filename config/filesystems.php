@@ -47,6 +47,13 @@ return [
             'report' => false,
         ],
 
+        'posts' => [
+            'driver' => 'local',
+            'root' => base_path('content/posts'),
+            'serve' => true,
+            'throw' => false,
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),

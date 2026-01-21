@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Notifications\NewSubmission;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Notification;
 
 class ContactController extends Controller
@@ -11,13 +11,13 @@ class ContactController extends Controller
     public function store(Request $request)
     {
         $fields = $request->only([
-            'name', 'company', 'email', 'url', 'description', 'more',
+            'name', 'company', 'email', 'what', 'budget', 'description', 'more',
         ]);
 
         Notification::route('mail', config('mail.to_email'))
             ->notify(new NewSubmission($fields));
 
-        if ($request->ajax()) {
+        if  ($request->ajax()) {
             return response('true');
         }
 
