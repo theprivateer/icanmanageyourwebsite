@@ -56,8 +56,8 @@
         <footer class="container margin-start-6xl margin-end-4xl">
             <div class="split">
                 <p>&copy; Phil Stephens 2025-{{ date('Y') }}</p>
-                <p><a href="https://www.linkedin.com/company/i-can-build-your-website/">LinkedIn</a></p>
-                <p>Made with <a href="https://kelpui.com">Kelp</a></p>
+                <p><a href="https://www.linkedin.com/company/i-can-manage-your-website/">LinkedIn</a></p>
+                {{-- <p>Made with <a href="https://kelpui.com">Kelp</a></p> --}}
             </div>
         </footer>
 	</body>
